@@ -26,13 +26,14 @@ export function PaginaLogin() {
   return (
     <div className="min-h-screen galaxy-bg flex items-center justify-center p-4 relative overflow-hidden">
       {/* Estrelas de fundo */}
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-2 h-2 bg-white rounded-full opacity-70 animate-pulse"></div>
         <div className="absolute top-32 right-20 w-1 h-1 bg-purple-300 rounded-full opacity-60 animate-pulse"></div>
         <div className="absolute bottom-40 left-32 w-1.5 h-1.5 bg-blue-300 rounded-full opacity-80 animate-pulse"></div>
         <div className="absolute top-64 left-1/2 w-1 h-1 bg-pink-300 rounded-full opacity-50 animate-pulse"></div>
         <div className="absolute bottom-20 right-40 w-2 h-2 bg-cyan-300 rounded-full opacity-60 animate-pulse"></div>
       </div>
+
       
       <div className="max-w-md w-full space-y-8">
         {/* Logo e Cabeçalho */}
