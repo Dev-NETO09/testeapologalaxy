@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema Galáxia - Cores personalizadas */
+:root {
+  --galaxy-purple: #6B46C1;
+  --galaxy-blue: #3B82F6;
+  --galaxy-indigo: #4F46E5;
+  --galaxy-pink: #EC4899;
+  --galaxy-cyan: #06B6D4;
+  --galaxy-dark: #1E1B4B;
+  --galaxy-darker: #0F0C29;
+}
+
+/* Gradiente galáxia de fundo */
+.galaxy-bg {
+  background: linear-gradient(135deg, #0F0C29 0%, #24243e 50%, #302b63 100%);
+}
+
+.galaxy-card {
+  background: linear-gradient(135deg, rgba(107, 70, 193, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.galaxy-button {
+  background: linear-gradient(135deg, #6B46C1 0%, #3B82F6 100%);
+  transition: all 0.3s ease;
+}
+
+.galaxy-button:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(107, 70, 193, 0.3);
+}
+
+.galaxy-text {
+  background: linear-gradient(135deg, #6B46C1 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 27, 75, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6B46C1 0%, #3B82F6 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+}
+
+/* Loading animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Success/Error toast animations */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
