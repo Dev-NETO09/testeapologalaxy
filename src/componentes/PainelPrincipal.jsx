@@ -81,11 +81,12 @@ export function PainelPrincipal() {
       {/* Cabeçalho */}
       <header className="galaxy-card shadow-lg border-b border-white/10 relative overflow-hidden">
         {/* Efeito de estrelas no header */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-2 right-20 w-1 h-1 bg-white rounded-full opacity-40 animate-pulse"></div>
           <div className="absolute top-4 right-40 w-0.5 h-0.5 bg-purple-300 rounded-full opacity-60 animate-pulse"></div>
           <div className="absolute bottom-3 left-32 w-1 h-1 bg-blue-300 rounded-full opacity-50 animate-pulse"></div>
         </div>
+
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
