@@ -53,63 +53,6 @@ Sistema completo de controle de finanças pessoais com tema galáxia, desenvolvi
 - **Lucide React** - Ícones
 - **PWA** - Progressive Web App
 
-## 📦 Instalação e Configuração
-
-### 1. Clone o repositório
-```bash
-git clone [seu-repositorio]
-cd sistema-financas
-```
-
-### 2. Instale as dependências
-```bash
-npm install
-```
-
-### 3. Configure o Firebase
-
-1. Acesse [Firebase Console](https://console.firebase.google.com/)
-2. Crie um novo projeto
-3. Ative Authentication (Google)
-4. Ative Firestore Database
-5. Copie as configurações do projeto
-
-### 4. Configure as variáveis de ambiente
-
-As configurações do Firebase já estão incluídas no projeto:
-
-```javascript
-const configuracaoFirebase = {
-  apiKey: "AIzaSyBP3SRxR5x-NQgdwSp3VHiYWRr5_kPAQzw",
-  authDomain: "apolo-4a40d.firebaseapp.com",
-  projectId: "apolo-4a40d",
-  storageBucket: "apolo-4a40d.firebasestorage.app",
-  messagingSenderId: "308571182220",
-  appId: "1:308571182220:web:f46395075a9fcace4c57a9"
-};
-```
-
-### 5. Execute o projeto
-```bash
-npm run dev
-```
-
-## 🚀 Deploy na Vercel
-
-### 1. Instale a CLI da Vercel
-```bash
-npm i -g vercel
-```
-
-### 2. Faça o deploy
-```bash
-vercel
-```
-
-### 3. Configure as variáveis de ambiente na Vercel
-- Acesse o painel da Vercel
-- Vá em Settings > Environment Variables
-- Adicione as configurações do Firebase
 
 ## 📱 Estrutura do Projeto
 
@@ -222,4 +165,4 @@ Para dúvidas ou problemas:
 
 ---
 
-**Desenvolvido com 🚀 usando React + Firebase - Tema Galáxia**
+**Desenvolvido com 🚀 usando React + Firebase - **
